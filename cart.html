@@ -131,15 +131,7 @@
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
-                        <!-- Example row -->
-                        <tr>
-                            <td class="px-4 py-4 whitespace-nowrap">Product Name</td>
-                            <td class="px-4 py-4 whitespace-nowrap text-right">$10.00</td>
-                            <td class="px-4 py-4 whitespace-nowrap text-right">
-                                <input type="number" min="1" value="1" class="w-16 border rounded px-2 py-1 text-right" id="qty-input" />
-                            </td>
-                            <td class="px-4 py-4 whitespace-nowrap text-right" id="total-cell">$10.00</td>
-                        </tr>
+                        <!-- Cart rows will be rendered here by JS -->
                     </tbody>
                 </table>
             </div>
@@ -162,7 +154,48 @@
             cartTotal.textContent = `Total: $${total}`;
         });
     </script>
+    <script>
+        // Ambil data cart dari local storage
+        const cartData = JSON.parse(localStorage.getItem('cart')) || [];
 
+        // Fungsi untuk render data cart ke tabel
+        function renderCart() {
+            const cartTable = document.querySelector('tbody');
+            cartTable.innerHTML = '';
 
+            let total = 0;
+            cartData.forEach((item, index) => {
+                const product = {
+                    id : "p1",
+                    name: "Wireless Headphones",
+                    price: "49",
+                    oldPrice: "59",
+                };
+
+                const itemTotal = (product.price * item.quantity).toFixed(2);
+                total += itemTotal;
+
+                // Tambahkan baris ke tabel
+                const row = `
+                <tr>
+                    <td class="px-4 py-3">${product.name}</td>
+                    <td class="px-4 py-3 text-right">$${product.price.toFixed(2)}</td>
+                    <td class="px-4 py-3 text-right">
+                        <input type="number" id="qty-input" value="${item.quantity}" min="1" class="w-16 text-center border border-gray-300 rounded-md">
+                    </td>
+                    <td class="px-4 py-3 text-right" id="total-cell">$${itemTotal}</td>
+                </tr>
+                `;
+                cartTable.innerHTML += row;
+            });
+
+            // Tampilkan total belanja
+            const cartTotal = document.getElementById('cart-total');
+            cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        // Render data cart saat halaman dimuat
+        renderCart();
+    </script>
 </body>
 </html>

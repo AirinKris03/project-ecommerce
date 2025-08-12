@@ -353,227 +353,7 @@
             </div>
 
             <!-- Products Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Product Card 1 -->
-                <div class="group bg-card rounded-2xl border-2 border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300">
-                    <!-- Product Image -->
-                    <div class="relative aspect-square overflow-hidden">
-                        <img
-                            src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
-                            alt="Wireless Headphones"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                        <!-- Badge -->
-                        <div class="absolute top-3 left-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                            Best Seller
-                        </div>
-                        <!-- Discount Badge -->
-                        <div class="absolute top-3 right-3 bg-destructive text-destructive-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                            -50%
-                        </div>
-                        <!-- Quick Actions -->
-                        <div class="absolute bottom-3 left-3 right-3 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="flex-1 flex items-center justify-center bg-white text-blue-500 px-3 py-2 rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors duration-200">
-                                <!-- Shopping Cart Icon -->
-                                <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <circle cx="9" cy="21" r="1"></circle>
-                                    <circle cx="20" cy="21" r="1"></circle>
-                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.38-7.39H6"></path>
-                                </svg>
-                                Add to Cart
-                            </button>
-                            <button class="flex items-center justify-center bg-white px-3 py-2 rounded-md text-sm hover:bg-primary/10 transition-colors duration-200">
-                                <!-- Heart Icon -->
-                                <svg class="h-4 w-4 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path d="M20.8 4.6c-1.5-1.5-4-1.5-5.5 0l-.8.8-.8-.8c-1.5-1.5-4-1.5-5.5 0s-1.5 4 0 5.5l6.3 6.3 6.3-6.3c1.5-1.5 1.5-4 0-5.5z"></path>
-                                </svg>
-                            </button>
-                            <button class="flex items-center justify-center bg-white px-3 py-2 rounded-md text-sm hover:bg-primary/10 transition-colors duration-200">
-                                <!-- Eye Icon -->
-                                <svg class="h-4 w-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Product Info -->
-                    <div class="p-6">
-                        <h3 class="font-semibold text-lg text-foreground mb-2 line-clamp-2">
-                            Wireless Headphones
-                        </h3>
-                        <!-- Rating -->
-                        <div class="flex items-center space-x-2 mb-3">
-                            <div class="flex text-yellow-400">
-                                <!-- 5 Stars, 4.5 filled -->
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                                    <polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon>
-                                </svg>
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                                    <polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon>
-                                </svg>
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                                    <polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon>
-                                </svg>
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"></svg>
-                                    <polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon>
-                                </svg>
-                                <svg class="h-4 w-4 fill-current opacity-50" viewBox="0 0 24 24"></svg>
-                                    <polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon>
-                                </svg>
-                            </div>
-                            <span class="text-sm text-muted-foreground">
-                                4.5 (1,200)
-                            </span>
-                        </div>
-                        <!-- Price -->
-                        <div class="flex items-center space-x-2 mb-4">
-                            <span class="text-2xl font-bold text-foreground">
-                                $49
-                            </span>
-                            <span class="text-lg text-muted-foreground line-through">
-                                $99
-                            </span>
-                        </div>
-                        <!-- Add to Cart Button -->
-                        <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-primary/90 transition-colors duration-200">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Product Card 2 -->
-                <div class="group bg-card rounded-2xl border-2 border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300">
-                    <div class="relative aspect-square overflow-hidden">
-                        <img
-                            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
-                            alt="Smart Watch"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                        <div class="absolute top-3 left-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                            New Arrival
-                        </div>
-                        <div class="absolute top-3 right-3 bg-destructive text-destructive-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                            -40%
-                        </div>
-                        <div class="absolute bottom-3 left-3 right-3 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="flex-1 flex items-center justify-center bg-white text-blue-500 px-3 py-2 rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors duration-200">
-                                <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <circle cx="9" cy="21" r="1"></circle>
-                                    <circle cx="20" cy="21" r="1"></circle>
-                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.38-7.39H6"></path>
-                                </svg>
-                                Add to Cart
-                            </button>
-                            <button class="flex items-center justify-center bg-white px-3 py-2 rounded-md text-sm hover:bg-primary/10 transition-colors duration-200">
-                                <svg class="h-4 w-4 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path d="M20.8 4.6c-1.5-1.5-4-1.5-5.5 0l-.8.8-.8-.8c-1.5-1.5-4-1.5-5.5 0s-1.5 4 0 5.5l6.3 6.3 6.3-6.3c1.5-1.5 1.5-4 0-5.5z"></path>
-                                </svg>
-                            </button>
-                            <button class="flex items-center justify-center bg-white px-3 py-2 rounded-md text-sm hover:bg-primary/10 transition-colors duration-200">
-                                <svg class="h-4 w-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-semibold text-lg text-foreground mb-2 line-clamp-2">
-                            Smart Watch Series 7
-                        </h3>
-                        <div class="flex items-center space-x-2 mb-3">
-                            <div class="flex text-yellow-400">
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                                <svg class="h-4 w-4 fill-current opacity-50" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                            </div>
-                            <span class="text-sm text-muted-foreground">
-                                4.5 (800)
-                            </span>
-                        </div>
-                        <div class="flex items-center space-x-2 mb-4">
-                            <span class="text-2xl font-bold text-foreground">
-                                $89
-                            </span>
-                            <span class="text-lg text-muted-foreground line-through">
-                                $149
-                            </span>
-                        </div>
-                        <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-primary/90 transition-colors duration-200">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Product Card 3 -->
-                <div class="group bg-card rounded-2xl border-2 border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300">
-                    <div class="relative aspect-square overflow-hidden">
-                        <img
-                            src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
-                            alt="Minimalist Chair"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                        <div class="absolute top-3 left-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                            Hot Deal
-                        </div>
-                        <div class="absolute top-3 right-3 bg-destructive text-destructive-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                            -30%
-                        </div>
-                        <div class="absolute bottom-3 left-3 right-3 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="flex-1 flex items-center justify-center bg-white text-blue-500 px-3 py-2 rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors duration-200">
-                                <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <circle cx="9" cy="21" r="1"></circle>
-                                    <circle cx="20" cy="21" r="1"></circle>
-                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.38-7.39H6"></path>
-                                </svg>
-                                Add to Cart
-                            </button>
-                            <button class="flex items-center justify-center bg-white px-3 py-2 rounded-md text-sm hover:bg-primary/10 transition-colors duration-200">
-                                <svg class="h-4 w-4 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <path d="M20.8 4.6c-1.5-1.5-4-1.5-5.5 0l-.8.8-.8-.8c-1.5-1.5-4-1.5-5.5 0s-1.5 4 0 5.5l6.3 6.3 6.3-6.3c1.5-1.5 1.5-4 0-5.5z"></path>
-                                </svg>
-                            </button>
-                            <button class="flex items-center justify-center bg-white px-3 py-2 rounded-md text-sm hover:bg-primary/10 transition-colors duration-200">
-                                <svg class="h-4 w-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-semibold text-lg text-foreground mb-2 line-clamp-2">
-                            Minimalist Chair
-                        </h3>
-                        <div class="flex items-center space-x-2 mb-3">
-                            <div class="flex text-yellow-400">
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                                <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                                <svg class="h-4 w-4 fill-current opacity-50" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>
-                            </div>
-                            <span class="text-sm text-muted-foreground">
-                                4.5 (500)
-                            </span>
-                        </div>
-                        <div class="flex items-center space-x-2 mb-4">
-                            <span class="text-2xl font-bold text-foreground">
-                                $129
-                            </span>
-                            <span class="text-lg text-muted-foreground line-through">
-                                $185
-                            </span>
-                        </div>
-                        <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-primary/90 transition-colors duration-200">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
             <!-- View All Button -->
             <div class="text-center mt-12">
@@ -582,7 +362,128 @@
                 </a>
             </div>
         </div>
-    </section></div></svg></div></svg></button>
+    </section>
+    <script>
+    const products = [
+        {
+            id: "p1",
+            name: "Wireless Headphones",
+            image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+            badge: "Best Seller",
+            discount: "-50%",
+            rating: 4.5,
+            reviews: 1200,
+            price: 49,
+            oldPrice: 99
+        },
+        {
+            id: "p2",
+            name: "Smart Watch Series 7",
+            image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+            badge: "New Arrival",
+            discount: "-40%",
+            rating: 4.5,
+            reviews: 800,
+            price: 89,
+            oldPrice: 149
+        },
+        {
+            id: "p3",
+            name: "Minimalist Chair",
+            image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+            badge: "Hot Deal",
+            discount: "-30%",
+            rating: 4.5,
+            reviews: 500,
+            price: 129,
+            oldPrice: 185
+        }
+    ];
+
+    function getStars(rating) {
+        let stars = '';
+        for (let i = 1; i <= 5; i++) {
+            if (i <= Math.floor(rating)) {
+                stars += `<svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>`;
+            } else if (i - rating < 1) {
+                stars += `<svg class="h-4 w-4 fill-current opacity-50" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>`;
+            } else {
+                stars += `<svg class="h-4 w-4 fill-current opacity-20" viewBox="0 0 24 24"><polygon points="12 17.27 18.18 21 15.45 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.55 13.97 5.82 21 12 17.27"></polygon></svg>`;
+            }
+        }
+        return stars;
+    }
+
+    function renderProducts() {
+        const productsGrid = document.getElementById('products-grid');
+        productsGrid.innerHTML = products.map(product => `
+            <div class="group bg-card rounded-2xl border-2 border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300" data-id="${product.id}">
+                <div class="relative aspect-square overflow-hidden">
+                    <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                    <div class="absolute top-3 left-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">${product.badge}</div>
+                    <div class="absolute top-3 right-3 bg-destructive text-destructive-foreground px-3 py-1 rounded-full text-xs font-semibold">${product.discount}</div>
+                    <div class="absolute bottom-3 left-3 right-3 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="flex-1 flex items-center justify-center bg-white text-blue-500 px-3 py-2 rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors duration-200">
+                            <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.38-7.39H6"></path>
+                            </svg>
+                            Add to Cart
+                        </button>
+                        <button class="flex items-center justify-center bg-white px-3 py-2 rounded-md text-sm hover:bg-primary/10 transition-colors duration-200">
+                            <svg class="h-4 w-4 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M20.8 4.6c-1.5-1.5-4-1.5-5.5 0l-.8.8-.8-.8c-1.5-1.5-4-1.5-5.5 0s-1.5 4 0 5.5l6.3 6.3 6.3-6.3c1.5-1.5 1.5-4 0-5.5z"></path>
+                            </svg>
+                        </button>
+                        <button class="flex items-center justify-center bg-white px-3 py-2 rounded-md text-sm hover:bg-primary/10 transition-colors duration-200">
+                            <svg class="h-4 w-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg text-foreground mb-2 line-clamp-2">${product.name}</h3>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <div class="flex text-yellow-400">${getStars(product.rating)}</div>
+                        <span class="text-sm text-muted-foreground">${product.rating} (${product.reviews})</span>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-2xl font-bold text-foreground">$${product.price}</span>
+                        <span class="text-lg text-muted-foreground line-through">$${product.oldPrice}</span>
+                    </div>
+                    <button class="add-to-cart-btn w-full bg-blue-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-primary/90 transition-colors duration-200" data-id="${product.id}">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        `).join('');
+
+        // Event listener setelah produk dirender
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('Product with ID ' + btn.getAttribute('data-id') + ' added to cart!');
+                // Ambil id produk
+                const productId = btn.getAttribute('data-id');
+                // Ambil keranjang dari localStorage
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                // Cari produk di array cart
+                const existing = cart.find(item => item.id === productId);
+                if (existing) {
+                    existing.qty += 1;
+                } else {
+                    cart.push({ id: productId, qty: 1 });
+                }
+                localStorage.setItem('cart', JSON.stringify(cart));
+            });
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', renderProducts);
+</script>
+
 
     <!-- Call to Action -->
     <section class="py-16">
@@ -805,6 +706,8 @@
             menuIcon.classList.toggle('hidden');
             closeIcon.classList.toggle('hidden');
         });
+
+        
     </script>
 
     </div>
